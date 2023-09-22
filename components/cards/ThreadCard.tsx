@@ -3,6 +3,7 @@ import Link from "next/link";
 
 import { formatDateString } from "@/lib/utils";
 import DeleteThread from "../forms/DeleteThread";
+
 interface Props {
   id: string;
   currentUserId: string;
@@ -114,11 +115,11 @@ function ThreadCard({
         </div>
 
         <DeleteThread
-          // threadId={JSON.stringify(id)}
-          // currentUserId={currentUserId}
-          // authorId={author.id}
-          // parentId={parentId}
-          // isComment={isComment}
+          threadId={JSON.stringify(id)}
+          currentUserId={currentUserId}
+          authorId={author.id}
+          parentId={parentId}
+          isComment={isComment}
         />
       </div>
 

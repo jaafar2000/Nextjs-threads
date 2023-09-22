@@ -3,6 +3,7 @@ import { redirect } from "next/navigation";
 
 import PostThread from "../../../../components/forms/PostThread";
 import { fetchUser } from "@/lib/actions/user.action";
+
 async function Page() {
   const user = await currentUser();
   if (!user) return null;

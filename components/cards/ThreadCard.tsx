@@ -113,7 +113,7 @@ function ThreadCard({
             </div>
           </div>
         </div>
-
+                  
         <DeleteThread
           threadId={JSON.stringify(id)}
           currentUserId={currentUserId}
